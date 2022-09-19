@@ -1,0 +1,56 @@
+/*For*/
+for(var i=1;i<=10;i++){
+    console.log("El numero es: " +i);
+}
+
+for(var i=1;i<=10;i+=2){
+    console.log("Numeros impares: " +i);
+}
+
+var alu=["Leonel","Jimena","Joel","Filiberto"];
+for(var i=1;i<=alu.length;i++){
+    pasedelista(alu[i]);
+}
+function pasedelista(alu){
+    console.log(`Alumnos presentes, ${alu}`);
+}
+/*While*/
+n = 0;
+x = 0;
+while (n < 3) {
+  n ++;
+  x += n;
+}
+
+let i = 1;
+
+while (i <= 10) {
+	document.write("El valor del bucle es: " + i);
+	i++;
+}
+
+var semana = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+function diasemana(semana){
+    console.log(`El dia de la semana es, ${semana}`);
+}
+while(semana.length > 0){
+    var semanas=semana.shift();
+    diasemana(semana);
+}
+/*Foreach*/
+const array1 = ['a', 'b', 'c'];
+array1.forEach(element => console.log(element));
+
+const numeros = [1, 2, 3, 4, 5];
+numeros.forEach(function(numero) {
+    console.log(numero);
+});
+
+const canciones = [
+    "Despecha",
+    "Titi Me Pregunto",
+    "El pañuelo",
+];
+canciones.forEach(function(cancion) {
+    console.log("Canción dentro de función anónima: ", cancion);
+});
